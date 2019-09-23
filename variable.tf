@@ -1,7 +1,7 @@
 variable "shared_credentials_file" {
   description = "Path of aws creds"
   type        = string
-  default     = ""
+  default     = "/home/ec2-user/.aws/credentials"
 }
 variable "profile" {
   description = "aws profile name"
@@ -16,7 +16,7 @@ variable "region" {
 }
 variable "bucket_name" {
   type    = string
-  default = ""
+  default = "qwer234509ghhji"
 }
 
 variable "tags" {
@@ -27,10 +27,10 @@ variable "tags" {
 variable "vpc_id" {
   description = "VPC id "
   type        = string
-  default     = ""
+  default     = "vpc-7fdc921b"
 }
 
 variable "route_id" {
   description = "Route table id, from where you want to access s3"
-  default     = ""
+  default     = "rtb-c55369a1"
 }
